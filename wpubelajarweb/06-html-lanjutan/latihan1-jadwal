@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Manggung FSTVLST</title>
+</head>
+<body>
+    <h1>Jadwal Manggung FSTVLST 2026 </h1>
+    <p>Jangan sampai ketinggalan! Berikut informasi jadwal penampilan
+        <strong>FSTVLST</strong> di berbagai acara musik Indonesia.
+        Pastikan untuk memeriksa informasi terbaru dari penyelenggara
+        sebelum menghadiri acara.</p>
+
+    <h2>TConcert Schedule</h2>
+    <table border="1" cellspacing="0" cellpadding="10">
+        <thead>
+            <tr>
+                <td>Day</td>
+                <td>Date (WIB)</td>
+                <td>Event</td>
+                <td>Location</td>
+                <td>Performance Time</td>
+                <td>Information</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Day 1</td>
+                <td>November 7, 2026</td>
+                <td>Neverland Cikarang</td>
+                <td>Meikarta Central Park, Bekasi</td>
+                <td>Belum diumumkan</td>
+                <td>Lineup diumumkan</td>
+            </tr>
+           <tr>
+                <td>Day 2</td>
+                <td>November 15, 2026</td>
+                <td>Gesrek Festival 2026</td>
+                <td>Ecopark Ancol, Jakarta</td>
+                <td>Belum diumumkan</td>
+                <td>Lineup diumumkan</td>
+            </tr>
+           <tr>
+                <td>Day 3</td>
+                <td>November 21, 2026</td>
+                <td>Soundrenaline 2026</td>
+                <td>Garuda Wisnu Kencana, Bali</td>
+                <td>Belum diumumkan</td>
+                <td>Lineup diumumkan</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>About FSTVLST</h2>
+     <ul>
+        <li><strong>Band Name:</strong> FSTVLST</li>
+        <li><strong>Origin:</strong> Yogyakarta, Indonesia</li>
+        <li><strong>Music Genre:</strong> Alternative Rock</li>
+        <li><strong>Language:</strong> Indonesian</li>
+    </ul>
+
+    <h2>Event Information</h2>
+
+    <p>
+        Tabel berikut berisi informasi tambahan mengenai acara
+        yang menghadirkan FSTVLST.
+    </p>
+
+    <table border="1" cellspacing="0" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Venue</th>
+                <th>Ticket Information</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2" align="center">
+                    <strong>🎸 FSTVLST LIVE</strong><br>
+                    Upcoming Concerts
+                </td>
+                <td>November 7, 2026</td>
+                <td>Meikarta Central Park</td>
+                <td>
+                    <a href="https://artatix.co.id/event/neverland_cikarang"
+                       target="_blank">
+                        Check Ticket Information
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>November 15, 2026</td>
+                <td>Ecopark Ancol</td>
+                <td>
+                    <a href="https://gesrekfestival.com/"
+                       target="_blank">
+                        Check Festival Information
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <strong>🎵 Important Notice</strong>
+                </td>
+                <td colspan="2">
+                    Jadwal dan waktu tampil dapat berubah.
+                    Periksa pengumuman resmi penyelenggara
+                    untuk mendapatkan informasi terbaru.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+        <em>
+            Enjoy the music and see you at the next FSTVLST show!
+        </em>
+    </p>
+
+</body>
+</html>
