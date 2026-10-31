@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba CSS - Font Styling</title>
+    <style>
+
+
+        
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Slabo+27px&display=swap');
+
+        @font-face {
+            font-family: "Redaction35";
+            src: url('./font/Redaction35-Regular.ttf') format("truetype");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+    
+        h1 {
+            color: crimson;
+            font-size: 60px;
+            text-align: center;
+            font-family: "Pacifico", sans-serif;
+            font-weight: 400;
+        }
+
+        p {
+            font-family: "Slabo 27px", sans-serif;
+            color:navy;
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .font-redaction {
+            font-family: "Redaction35", arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem minus facilis amet doloribus, blanditiis excepturi ea molestias quasi ipsum dolores</p>
+    
+    <p class="font-redaction">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio animi, harum cumque aspernatur facilis nulla rerum ipsum. A, dolorem quas.</p>
+</body>
+</html>
