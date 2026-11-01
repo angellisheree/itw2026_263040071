@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Pseudo-elements Part 1</title>
+</head>
+<style> 
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f9f9f9;
+    }
+    .link-download {
+        text-decoration: none;
+        color:#333;
+        font-weight: bold;
+        background-color: #a49696;
+        padding: 10px;
+        border-radius: 5px;
+
+    }
+
+    .link-download::before {
+        content: "⬇️ ";
+    }   
+
+    .materi-baru::after {
+        content: " (ANYAR REK)";
+        color: red;
+        font-weight: bold;
+        font-size: 0.5rem;
+    }
+
+    .kutipan-keren {
+        font-style: italic;
+        border-left: 5px solid darkblue;
+        padding-left: 15px;
+        display: inline-block;
+        background-color: #e6e6e6;
+    }
+
+    .kutipan-keren::before, .kutipan-keren::after {
+        content: "❝ ";
+        color:deeppink;
+        font-size: 1.5em;
+    }
+    
+    .kutipan-keren::after {
+        content: "❞ ";  
+        font-size: 1.5em;
+    }
+    
+    .artikel-wpu::first-letter {
+        font-size: 3em;
+        font-weight: bold;
+        color: darkblue;
+    }
+
+    .artikel-wpu {
+        line-height: 1.6;
+        max-width: 600px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        border-left: 5px solid darkblue;
+        padding: 20px;
+    }
+
+    .artikel-wpu::first-line {
+        font-size: 1.2em;
+        color: darkblue;
+        letter-spacing: 3px;
+    }
+
+    .artikel-wpu::selection {
+        background-color: rgb(255, 86, 247);
+        color: white;
+    }
+
+    .input-pencarian {
+        border: 2px solid rgb(255, 86, 247);
+        padding: 12px;
+        border-radius: 5px;
+        border: 3px solid rgb(255, 86, 247);
+
+    }
+
+    .input-pencarian::placeholder {
+        color: rgb(255, 86, 247);
+        font-style: italic;
+        letter-spacing: 1px;
+    }
+
+    .input-pencarian:focus::placeholder {
+        outline: none;
+        color: transparent;
+    }
+
+</style>
+
+<body>
+
+  <h1>Playground Pseudo-elements</h1>
+
+  <h2>1. Konten Tambahan (::before, ::after)</h2>
+
+  <a href="#" class="link-download">Download Source Code</a>
+  <br><br>
+
+  <ul>
+    <li>HTML Dasar</li>
+    <li>CSS Layouting <span class="materi-baru"></span></li>
+    <li>JavaScript DOM</li>
+  </ul>
+
+  <div class="kutipan-keren">
+    Ngoding itu mudah, yang susah itu cari bug-nya kalau lupa titik koma.
+  </div>
+
+
+  <h2>2. Tipografi dan Teks (::first-letter, ::first-line, ::selection)</h2>
+
+  <p class="artikel-wpu">
+    Halo Pasukan Titik Koma! Selamat datang di seri tutorial WPU. Pada bagian ini, kita akan belajar bagaimana
+    memanipulasi tampilan teks menggunakan pseudo-elements tanpa perlu menambah tag span di HTML. Coba kecilkan jendela
+    browser Anda dan lihat bagaimana baris pertama secara otomatis menyesuaikan efek tebalnya. Jangan lupa, coba blok
+    (sorot) paragraf ini untuk melihat efek dari pseudo-element selection.
+  </p>
+
+
+  <h2>3. Formulir (::placeholder)</h2>
+
+  <p>Coba klik input di bawah ini, perhatikan gaya teks placeholder-nya dan bagaimana ia menghilang saat kursor aktif.
+  </p>
+  <form>
+    <input type="text" class="input-pencarian" placeholder="Cari video tutorial WPU di sini...">
+  </form>
+
+</body>
+
+</html>
