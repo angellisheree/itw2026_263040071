@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #1a1a1a;
+}
+
+body {
+    background: linear-gradient(
+        135deg,
+        #fff0f1,
+        #E8EAF6,
+        #f5f5f5
+    );
+
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+
+    
+    margin: 0;
+    background-color: #f7e1ef;
+    position: relative;
+    isolation: isolate;
+
+}
+
+/* BUBBLE PERTAMA */
+body::before {
+    content: "";
+    position: fixed;
+
+    width: 180px;
+    height: 180px;
+
+    top: 100px;
+    right: 8%;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle at 30% 25%,
+        #ffffff 0%,
+        #fce8f3 15%,
+        #eebbd5 45%,
+        #d994b9 75%,
+        #f7d9e9 100%
+    );
+
+    box-shadow:
+        inset -12px -15px 25px rgba(160, 80, 120, 0.15),
+        inset 8px 8px 20px rgba(255, 255, 255, 0.8),
+        0 10px 30px rgba(180, 100, 140, 0.15);
+
+    opacity: 0.8;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* BUBBLE KEDUA */
+body::after {
+    content: "";
+    position: fixed;
+
+    width: 120px;
+    height: 120px;
+
+    bottom: 100px;
+    left: 5%;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle at 30% 25%,
+        #ffffff 0%,
+        #fce8f3 20%,
+        #e9b4d0 50%,
+        #d98bb4 80%,
+        #f8ddeb 100%
+    );
+
+    box-shadow:
+        inset -10px -12px 20px rgba(160, 80, 120, 0.15),
+        inset 7px 7px 15px rgba(255, 255, 255, 0.8),
+        0 8px 25px rgba(180, 100, 140, 0.15);
+
+    opacity: 0.8;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* DEKORASI BUBBLE TAMBAHAN */
+
+.bubble {
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+
+    background: radial-gradient(
+        circle at 30% 25%,
+        white,
+        #fce8f3 25%,
+        #e9b4d0 65%,
+        #d994b9
+    );
+
+    box-shadow:
+        inset -8px -10px 15px rgba(160, 80, 120, 0.15),
+        inset 5px 5px 12px rgba(255, 255, 255, 0.8),
+        0 5px 20px rgba(180, 100, 140, 0.15);
+
+    opacity: 0.75;
+}
+
+.bubble-one {
+    width: 65px;
+    height: 65px;
+    top: 220px;
+    right: 20%;
+}
+
+.bubble-two {
+    width: 90px;
+    height: 90px;
+    top: 550px;
+    left: 12%;
+}
+
+.bubble-three {
+    width: 45px;
+    height: 45px;
+    bottom: 120px;
+    right: 15%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading p {
+    color: #b77d96;
+    letter-spacing: 3px;
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+.section-heading h2 {
+    color: #594650;
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.section-heading span {
+    color: #987587;
+    font-style: italic;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+        background: rgba(255, 245, 249, 0.75);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        color: #594650;
+        padding: 35px 20px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.8);
+        box-shadow: 0 5px 20px rgba(150, 100, 120, 0.08);
+}
+header .tagline {
+    font-size: 0.95em;
+    color: #987587;
+    font-style: italic;
+    letter-spacing: 1.5px;
+
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+header h1 {
+    color: #594650;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+header .genre-tags {
+    margin-top: 10px;
+}
+
+header .genre-tags .tag {
+    display: inline-block;
+    background: rgba(221, 160, 180, 0.20);
+    color: #765565;
+    padding: 6px 16px;
+    margin: 0 5px;
+    border: 1px solid rgba(255,255,255,0.8);
+    border-radius: 25px;
+    font-size: 0.9em;
+    transition: 0.3s ease;
+}
+header .genre-tags .tag:hover {
+    background: #d99aaf;
+    color: white;
+    transform: translateY(-3px);
+}
+
+main {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main .profile-card {
+    /* Glassmorphism */
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 20px;
+    box-shadow:
+        0 8px 32px rgba(180, 100, 140, 0.12),
+        inset 0 1px 1px rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+main .profile-card .artist-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid#fb878b;
+    margin-bottom: 20px;
+}
+
+main .profile-card .bio {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+main .profile-card .bio p {
+    margin-bottom: 15px;
+}
+
+main .profile-card .stats .stat-item {
+    display: inline-block;
+    width: 150px;
+    padding: 20px;
+    margin: 10px 20px;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 8px;
+    border: 2px solid #fac0c2;
+    
+}
+
+main .profile-card .stats .stat-item .stat-value {
+    font-size: 2em;
+    font-weight: bold;
+    color: #fb878b;
+
+}
+
+main .profile-card .stats .stat-item .stat-label {
+    font-size: 0.9em;
+    color: #666;
+}
+
+main .discography {
+    margin: 70px auto;
+    padding: 40px 30px;
+    max-width: 1100px;
+    background: transparent;
+    
+   
+}
+
+main .discography h2,
+main .social-links h2 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #222;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+main .discography .album-list {
+    text-align: center;
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    text-align: center;
+    align-items: stretch;
+}
+
+main .discography .album-list .album-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 360px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0;
+    /* Glassmorphism */
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 20px;
+    box-shadow:
+        0 8px 32px rgba(180, 100, 140, 0.12),
+        inset 0 1px 1px rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+main .discography .album-list .album-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow:
+        0 15px 35px rgba(180, 100, 140, 0.2),
+        inset 0 1px 2px white;
+}
+
+
+main .discography .album-list .album-card img {
+    width: 165px;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(80,40,60,0.15);
+    transition: 0.35s ease;
+}
+main .discography .album-list .album-card:hover img {
+    transform: scale(1.04);
+}
+
+main .discography .album-list .album-card h2,
+main .discography .album-list .album-card h3 {
+    font-size: 1.1em;
+    color: #222;
+    line-height: 1.5;
+    margin: 5px 0 10px;
+}
+
+ main .discography .album-list .album-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+ main .discography .album-list .album-card .btn-listen{
+    display: inline-block;
+    margin-top: auto;
+    padding: 11px 25px;
+
+    background-color: #ff858c;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 30px;
+
+    font-weight: bold;
+    transition: 0.3s ease;
+ }
+
+ main .discography .album-list .album-card .btn-listen:hover {
+    background-color: #e85f6b;
+    transform: scale(1.05);
+ }
+
+ main .social-links {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 12px;
+    margin: 30px 0;
+ }
+
+ main .social-links .social-btn {
+    display: inline-block;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 12px 30px;
+    margin: 15px;
+    border-radius: 25px;
+    font-size: 0.9em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+ }
+
+ main .social-links .social-btn:hover {
+    background-color: #333;
+ }
+
+ footer {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 25px 15px;
+    margin-top: 50px;
+    color: #987587;
+ }
+
+ footer p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #765565;
+ }
+
+ footer span {
+    display: block;
+    font-size: 0.8em;
+    margin-bottom: 12px;
+    color: #987587;
+}
+
+footer a {
+    color: #d99aaf;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: #e85f6b;
+    text-decoration: underline;
+}
+footer small {
+    font-size: 0.7em;
+    color: #b49aaa;
+}
